@@ -1,0 +1,190 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+#main{
+    border: 2px solid blue;
+    width: 450px;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#main h2{
+    text-align: center;
+}
+
+.step{
+    display: flex;
+    justify-content: space-around;
+    /*border: 2px solid black;*/
+    align-items: center;
+    min-width: 400px;
+
+}
+
+.nameStape{
+    display: flex;
+    /*border: 2px solid black;*/
+    /*justify-content: space-between;*/
+    font-size: 20px;
+    padding: 0px 0px;
+
+}
+
+.nameStape p{
+    margin-bottom: 14px;
+    padding: 0px 0px;
+}
+
+#name{
+    position: relative;
+    left: 4px;
+    top: 0px;
+}
+
+#contact{
+    position: relative;
+    left: 65px;
+    top: 0px;
+}
+
+#password{
+    position: relative;
+    top: 0px;
+    left: 113px;
+}
+
+#submit{
+    position: relative;
+    top: 0px;
+    left: 161px;
+}
+
+.number{
+    border: 2px solid black;
+    border-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#one{
+    background-color: blue;
+    
+}
+
+#one span{
+    display: block;
+}
+
+#one i{
+
+    color: white;
+
+}
+
+i{
+    font-size: x-large;
+    color: blue;
+}
+
+.barre{
+    border: none;
+    border-bottom: 3px solid black;
+    border-bottom-color: black;
+    height: 0px;
+    width: 50px;
+}
+
+.formular{
+    /*border: 1px solid black;*/
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid blue;*/
+
+}
+
+form label{
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input{
+    height: 30px;
+    width: 350px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    opacity: unset;
+    font-size: 17px;
+}
+
+form button{
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: blue;
+    border-color: blue;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+
+}
+
+form button:hover{
+    background-color: white;
+    color: blue;
+}
+
+.btn{
+    display: flex;
+}
+
+.prev{
+    margin-right: 10px;
+    background-color: white;
+    color: blue;
+}
+.prev:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+/*
+#contactInfo{
+    display: none;
+}
+
+#pwd{
+    display: none;
+}
+
+*/

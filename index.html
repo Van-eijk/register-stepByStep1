@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h2>Sign Up</h2>
+        <div class="nameStape">
+            <p id="name">Name</p>
+            <p id="contact">Contact</p>
+            <p id="password">Password</p>
+            <p id="submit">Submit</p>
+        </div>
+        <div class="step">
+            <div id="one" class="number">
+                <span>
+                    <i class="fa-solid fa-1"></i>
+                </span>
+            </div>
+            <div class="barre" id="barreOne"></div>
+
+            <div id="two" class="number">
+                <i class="fa-solid fa-2"></i>
+            </div>
+            <div class="barre" id="barreTwo"></div>
+
+            <div id="thre" class="number">
+                <i class="fa-solid fa-3"></i>
+            </div>
+        
+            <div class="barre" id="barreTwo"></div>
+
+            <div id="four" class="number">
+                <i class="fa-solid fa-4"></i>
+            </div>
+            
+        </div>
+
+        <div id="basicInfo" class="formular">
+            <form action="">
+                <label for="firstName"> First Name</label>
+                <input type="text" id="firstName" autofocus>
+                <label for="lastName"> Last Name</label>
+                <input type="text" id="lastName">
+
+                <button onclick="firstStep(1)">NEXT</button>
+            </form>
+        </div>
+
+        <div id="contactInfo" class="formular">
+            <form action="">
+                <label for="numberPhone"> Number phone</label>
+                <input type="tel" id="numberPhone" autofocus>
+                <label for="email"> Email</label>
+                <input type="email" id="email">
+                <div class="btn">
+                    <button onclick="" class="prev"> PREV.</button>
+                    <button onclick="firstStep()">NEXT</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="pwd" class="formular">
+            <form action="">
+                <label for="setPassword"> Password</label>
+                <input type="password" id="setPassword" autofocus>
+                <label for="confirmPwd"> Confirm password</label>
+                <input type="password" id="confirmPwd">
+                <div class="btn">
+                    <button onclick="" class="prev"> PREV.</button>
+                    <button onclick="firstStep()">SIGN UP</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        /*let formular = document.getElementsByClassName("formular");
+        formular[1].style.display = "flex";
+        formular[2].style.display = "none";*/
+
+        var currentFormular = 0 ; // le formulaire courant est configuré pour etre le 1er (0)
+        showFormular(currentFormular); // Fonction pour afficher la table courante
+
+        function showFormular(n){
+            // Fonction pour afficher la table courante
+            var formular = document.getElementsByClassName("formular");
+            formular[n].style.display = "flex";
+
+
+        }
+
+       
+       
+    </script>
+    
+</body>
+</html>
